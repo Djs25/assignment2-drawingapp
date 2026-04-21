@@ -1,0 +1,120 @@
+html{
+    background-image: url('img/drawing.png');
+    background-size: cover;
+}
+h1,p{
+    text-align: center;
+    color: rgb(4, 3, 3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h1{
+    font-size: 2em;
+    padding-top: 40px;
+}
+p{
+    font-size: 1.2em;
+    margin-top: 0px;
+}
+
+.drawing-area{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding:10px 20px;
+    gap:16px;
+    width:100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: center;
+
+}
+canvas{
+    border: 1px solid black;
+    margin:0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width:75vw;
+    max-width:800px;
+    height:60vh;
+    background-color:#f0f0f0;
+}
+button{
+    background: transparent;
+    border: 2px solid black;
+    color:black;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding:10px 20px;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: lightgray;
+    transform: scale(1.05);
+    color:black;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.palette{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    width:auto;
+}
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top:10px;
+    margin-top:130px;
+}
+.color{
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+.color:hover{
+    transform: scale(1.2);
+    border-color: black;
+}
+.color.active{
+    border-color: black;
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+.eraser{
+    width:32px;
+    height:32px;
+    margin-top:0px;
+    padding: 0;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.eraser:hover{
+    transform: scale(1.2);
+    border-color: black;
+}
+.eraser.active{
+    border-color: black;
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+#button{
+    width:fit-content;
+    margin-top:10px;
+    background-color: lightblue;
+}

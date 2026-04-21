@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head> 
+<body>
+    <main>
+    
+    <div class="drawing-area">
+        <div class="leftSide">
+            <h1>Drawing Board</h1>
+    <p>Draw what is on your mind!</p>
+            <canvas id="canvas"></canvas>
+            <button id="button">Clear</button>
+        </div>
+        <div class="rightSide">
+            <div class="palette">
+                <span class="color" style="background-color: black;" data-color="black"></span>
+                <span class="color" style="background-color: red;" data-color="red"></span>
+                <span class="color" style="background-color: green;" data-color="green"></span>
+                <span class="color" style="background-color: blue;" data-color="blue"></span>
+                <span class="color" style="background-color: yellow;" data-color="yellow"></span>
+                <span class="color" style="background-color: purple;" data-color="purple"></span>
+                <span class="color" style="background-color: orange;" data-color="orange"></span>
+                <span class="color" style="background-color: gray;" data-color="gray"></span>
+                <span class="color" style="background-color: pink;" data-color="pink"></span>
+                <span class="color" style="background-color: brown;" data-color="brown"></span>
+                <span class="color" style="background-color: white;" data-color="white"></span>
+                <button class="eraser" style="background-color: f0f0f0;" data-color="f0f0f0">E</button>
+            </div>
+            <label for="brushSize">Brush Size:<span id="brushSizeValue">5</span>px</label>
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+        </div>
+    </div>
+    </main>
+</body>
+</html>
